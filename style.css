@@ -233,7 +233,8 @@ hr {
   margin: 10px 0;
 }
 
-.contact-item i {
+.contact-item i,
+.experience-title i {
   background-color: var(--neutral-light);
   padding: 10px;
   border-radius: 5px;
@@ -280,13 +281,13 @@ hr {
 .gen-info{
   display: flex;
   flex-wrap: wrap;  
+  gap: 6%;
 }
 
 .about-me .details {
-  flex-basis: 50%;
-  width: 48%;
-  padding: 20px;
-  /* border: 2px solid orchid; */
+  flex-basis: 47%;
+  width: 47%;
+  padding-top: 20px;
 }
 
 .gallery {
@@ -294,6 +295,7 @@ hr {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
+  align-self: start;
 }
 
 .personal-info p{
@@ -306,13 +308,160 @@ hr {
   height: min-content;
   border-radius: 10px;
   overflow: hidden;
-  /* border: 1px solid #34495E; */
 }
 .image-box img{
   width: 100%;
   margin-bottom: 20px;
   border-radius: 10px;  
 }
+
+/* professional experience */
+
+.experience {
+  padding-top: 20px;
+}
+
+
+
+.experience-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 5px;
+  gap: 10px;
+}
+
+.experience-details{
+  margin-left: 40px;
+}
+
+.experience-details p{
+  margin-bottom: 5px;
+}
+
+/* technologies */
+
+/* .tech{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(107, 26, 96, 0.1);
+}
+
+.tech i {
+  width: 2rem;
+  height: 2rem;
+} */
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid sienna;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .skill-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  margin: 10px 0;
+  font-size: 16px;
+} */
+
+.skill-card hr {
+  width: 80%;
+  border: 1px solid;
+}
+
+/* Different colors for icons, technology names, and lines */
+.skill-card.python i,
+.skill-card.python h3,
+.skill-card.python hr { color: #306998; }
+
+.skill-card.django i,
+.skill-card.django h3,
+.skill-card.django hr { color: #092E20; }
+
+.skill-card.javascript i,
+.skill-card.javascript h3,
+.skill-card.javascript hr { color: #F0DB4F; }
+
+.skill-card.react i,
+.skill-card.react h3,
+.skill-card.react hr { color: #61DAFB; }
+
+.skill-card.next i,
+.skill-card.next h3,
+.skill-card.next hr { color: #000000; }
+
+.skill-card.node i,
+.skill-card.node h3,
+.skill-card.node hr { color: #68A063; }
+
+.skill-card.tailwind i,
+.skill-card.tailwind h3,
+.skill-card.tailwind hr { color: #38B2AC; }
+
+.skill-card.typescript i,
+.skill-card.typescript h3,
+.skill-card.typescript hr { color: #3178C6; }
+
+.skill-card.graphql i,
+.skill-card.graphql h3,
+.skill-card.graphql hr { color: #E10098; }
+
+.skill-card.api i,
+.skill-card.api h3,
+.skill-card.api hr { color: #4CAF50; }
+
+.skill-card.docker i,
+.skill-card.docker h3,
+.skill-card.docker hr { color: #2496ED; }
+
+.skill-card.github i,
+.skill-card.github h3,
+.skill-card.github hr { color: #181717; }
+
+.skill-card.postgresql i,
+.skill-card.postgresql h3,
+.skill-card.postgresql hr { color: #336791; }
+
+.skill-card.mongodb i,
+.skill-card.mongodb h3,
+.skill-card.mongodb hr { color: #47A248; }
+
+.skill-card.aws i,
+.skill-card.aws h3,
+.skill-card.aws hr { color: #FF9900; }
+
+.skill-card.cicd i,
+.skill-card.cicd h3,
+.skill-card.cicd hr { color: #6C63FF; }
+
+
+
 
 
 /* Media Queries */
