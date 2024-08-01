@@ -317,7 +317,8 @@ hr {
 
 /* professional experience */
 
-.experience {
+.experience,
+.education {
   padding-top: 20px;
 }
 
@@ -339,125 +340,72 @@ hr {
   margin-bottom: 5px;
 }
 
-/* technologies */
+/* projects */
 
-/* .tech{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(107, 26, 96, 0.1);
+.portfolio {
+  padding: 2rem 0;
 }
 
-.tech i {
-  width: 2rem;
-  height: 2rem;
-} */
-
-.skills-container {
+.projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  justify-content: space-around;
 }
 
-.skill-card {
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(33.333% - 2rem);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 10px;
-  width: 20%;
-  height: 20%;
   text-align: center;
-  padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-weight: 400;
-  font-size: 0.75rem;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-.skill-card hr {
-  width: 80%;
-  border: 1px solid;
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
 }
 
-/* Different colors for icons, technology names, and lines */
-.skill-card.python i,
-.skill-card.python p,
-.skill-card.python hr { color: #306998; }
+.project-card h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
 
-.skill-card.django i,
-.skill-card.django p,
-.skill-card.django hr { color: #092E20; }
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
 
-.skill-card.javascript i,
-.skill-card.javascript p,
-.skill-card.javascript hr { color: #F0DB4F; }
+.project-card .buttons {
+  display: flex;
+  gap: 1rem;
+}
 
-.skill-card.react i,
-.skill-card.react p,
-.skill-card.react hr { color: #61DAFB; }
+.project-card .btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
 
-.skill-card.next i,
-.skill-card.next p,
-.skill-card.next hr { color: #000000; }
-
-.skill-card.node i,
-.skill-card.node p,
-.skill-card.node hr { color: #68A063; }
-
-.skill-card.tailwind i,
-.skill-card.tailwind p,
-.skill-card.tailwind hr { color: #38B2AC; }
-
-.skill-card.typescript i,
-.skill-card.typescript p,
-.skill-card.typescript hr { color: #3178C6; }
-
-.skill-card.graphql i,
-.skill-card.graphql p,
-.skill-card.graphql hr { color: #E10098; }
-
-.skill-card.api i,
-.skill-card.api p,
-.skill-card.api hr { color: #4CAF50; }
-
-.skill-card.docker i,
-.skill-card.docker p,
-.skill-card.docker hr { color: #2496ED; }
-
-.skill-card.github i,
-.skill-card.github p,
-.skill-card.github hr { color: #181717; }
-
-.skill-card.postgresql i,
-.skill-card.postgresql p,
-.skill-card.postgresql hr { color: #336791; }
-
-.skill-card.mongodb i,
-.skill-card.mongodb p,
-.skill-card.mongodb hr { color: #47A248; }
-
-.skill-card.aws i,
-.skill-card.aws p,
-.skill-card.aws hr { color: #FF9900; }
-
-.skill-card.cicd i,
-.skill-card.cicd p,
-.skill-card.cicd hr { color: #6C63FF; }
-
-
+.project-card .btn:hover {
+  background-color: #0056b3;
+}
 
 
 
 /* Media Queries */
-@media (max-width: 799px) {
+@media (max-width: 900px) {
   
   
   .nav-links {
@@ -494,15 +442,27 @@ hr {
   }
 
 
-.about-me .details {
-  flex-basis: 100%;
-  width: 100%;
-  padding: 5px;  
-}
+  .about-me .details {
+    flex-basis: 100%;
+    width: 100%;
+    padding: 5px;  
+  }
+
+  /* Project section */
+
+  .projects-container {
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .project-card {
+    width: calc(45%);
+    display: flex;
+  }
    
 }
 
-@media (max-width: 477px) {
+@media (max-width: 599px) {
   .nav-links {
     display: none;
   }
@@ -515,5 +475,16 @@ hr {
 
   .image-box {
     width: 90%;
+  }
+
+  .skill-card p {
+    font-size: 0.5rem;
+  }
+
+  /* portfolio section */
+
+  .project-card {
+    width: calc(70%);
+    display: flex;
   }
 }
