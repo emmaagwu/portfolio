@@ -351,6 +351,7 @@ hr {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .project-card {
